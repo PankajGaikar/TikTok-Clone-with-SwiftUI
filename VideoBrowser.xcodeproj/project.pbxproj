@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		BF2CCF7024F59B62002F100B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CCF6F24F59B62002F100B /* AppDelegate.swift */; };
 		BF2CCF7224F59B62002F100B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CCF7124F59B62002F100B /* SceneDelegate.swift */; };
-		BF2CCF7424F59B62002F100B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CCF7324F59B62002F100B /* ViewController.swift */; };
+		BF2CCF7424F59B62002F100B /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CCF7324F59B62002F100B /* ExploreViewController.swift */; };
 		BF2CCF7724F59B62002F100B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2CCF7524F59B62002F100B /* Main.storyboard */; };
 		BF2CCF7924F59B66002F100B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2CCF7824F59B66002F100B /* Assets.xcassets */; };
 		BF2CCF7C24F59B66002F100B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2CCF7A24F59B66002F100B /* LaunchScreen.storyboard */; };
@@ -19,6 +19,10 @@
 		BF2CCFAB24F59EB9002F100B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CCFAA24F59EB9002F100B /* Models.swift */; };
 		BF2CCFAD24F59F8C002F100B /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CCFAC24F59F8C002F100B /* CategoryViewModel.swift */; };
 		BF2CCFB024F5A241002F100B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CCFAF24F5A241002F100B /* Constants.swift */; };
+		BF2CCFB424F5A566002F100B /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CCFB224F5A566002F100B /* CategoryTableViewCell.swift */; };
+		BF2CCFB524F5A566002F100B /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2CCFB324F5A566002F100B /* CategoryTableViewCell.xib */; };
+		BF2CCFB824F5A57F002F100B /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CCFB624F5A57F002F100B /* VideoCollectionViewCell.swift */; };
+		BF2CCFB924F5A57F002F100B /* VideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2CCFB724F5A57F002F100B /* VideoCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +46,7 @@
 		BF2CCF6C24F59B62002F100B /* VideoBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2CCF6F24F59B62002F100B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF2CCF7124F59B62002F100B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF2CCF7324F59B62002F100B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF2CCF7324F59B62002F100B /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		BF2CCF7624F59B62002F100B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF2CCF7824F59B66002F100B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF2CCF7B24F59B66002F100B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +61,10 @@
 		BF2CCFAA24F59EB9002F100B /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		BF2CCFAC24F59F8C002F100B /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
 		BF2CCFAF24F5A241002F100B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BF2CCFB224F5A566002F100B /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		BF2CCFB324F5A566002F100B /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
+		BF2CCFB624F5A57F002F100B /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		BF2CCFB724F5A57F002F100B /* VideoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +159,8 @@
 		BF2CCFA024F59C57002F100B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BF2CCF7324F59B62002F100B /* ViewController.swift */,
+				BF2CCFB124F5A53C002F100B /* CustomUI */,
+				BF2CCF7324F59B62002F100B /* ExploreViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -186,6 +195,17 @@
 				BF2CCFAF24F5A241002F100B /* Constants.swift */,
 			);
 			path = Utilitise;
+			sourceTree = "<group>";
+		};
+		BF2CCFB124F5A53C002F100B /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				BF2CCFB224F5A566002F100B /* CategoryTableViewCell.swift */,
+				BF2CCFB324F5A566002F100B /* CategoryTableViewCell.xib */,
+				BF2CCFB624F5A57F002F100B /* VideoCollectionViewCell.swift */,
+				BF2CCFB724F5A57F002F100B /* VideoCollectionViewCell.xib */,
+			);
+			path = CustomUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,7 +313,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF2CCFB924F5A57F002F100B /* VideoCollectionViewCell.xib in Resources */,
 				BF2CCFA724F59DFD002F100B /* assignment.json in Resources */,
+				BF2CCFB524F5A566002F100B /* CategoryTableViewCell.xib in Resources */,
 				BF2CCF7C24F59B66002F100B /* LaunchScreen.storyboard in Resources */,
 				BF2CCF7924F59B66002F100B /* Assets.xcassets in Resources */,
 				BF2CCF7724F59B62002F100B /* Main.storyboard in Resources */,
@@ -333,7 +355,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#if which swiftlint >/dev/null; then\n # swiftlint\n#else\n # echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n#fi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -342,11 +364,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF2CCF7424F59B62002F100B /* ViewController.swift in Sources */,
+				BF2CCF7424F59B62002F100B /* ExploreViewController.swift in Sources */,
 				BF2CCF7024F59B62002F100B /* AppDelegate.swift in Sources */,
 				BF2CCFAD24F59F8C002F100B /* CategoryViewModel.swift in Sources */,
 				BF2CCF7224F59B62002F100B /* SceneDelegate.swift in Sources */,
+				BF2CCFB424F5A566002F100B /* CategoryTableViewCell.swift in Sources */,
 				BF2CCFAB24F59EB9002F100B /* Models.swift in Sources */,
+				BF2CCFB824F5A57F002F100B /* VideoCollectionViewCell.swift in Sources */,
 				BF2CCFB024F5A241002F100B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -39,7 +39,7 @@ class CategoryViewModel {
      */
     func getCategoriesData() -> Void {
         
-        if let path = Bundle.main.path(forResource: Constants.LocalJSONFile.NAME, ofType: Constants.LocalJSONFile.EXTENSION) {
+        if let path = Bundle.main.path(forResource: Constants.LocalJSONFile.Name, ofType: Constants.LocalJSONFile.Extension) {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
                 let decoder = JSONDecoder()
