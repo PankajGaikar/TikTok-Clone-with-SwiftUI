@@ -17,6 +17,8 @@ class ExploreViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = "Explore"
+        
         //Setup Tableview
         setupTableView()
         
@@ -36,6 +38,12 @@ class ExploreViewController: UIViewController {
 
 }
 
+//Tableview
+
+/*
+ * No. of sections - As many as categories.
+ * Why? Cz we want to show category name and it would be easier with section header.
+ */
 extension ExploreViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -49,6 +57,11 @@ extension ExploreViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.CellIdentifiers.CategoryTableViewCellIdentifier, for: indexPath) as! CategoryTableViewCell
         
+        /*
+         * Assign nodes to tableview
+         * Tableview will lay the video thumbnails i.e. collection item data.
+         */
+        cell.nodes = categoryViewModel.categories[indexPath.section].nodes
         return cell
     }
     
@@ -60,6 +73,9 @@ extension ExploreViewController: UITableViewDelegate, UITableViewDataSource {
         return 180
     }
     
+    /*
+     * Create programatic view for table section header.
+     */
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
 
         let headerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 30))

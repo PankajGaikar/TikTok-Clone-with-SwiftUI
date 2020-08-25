@@ -19,9 +19,8 @@ struct Constants {
         static let CategoryTableViewCellIdentifier = "CategoryTableViewCell"
         static let VideoCollectionViewCellIdentifier = "VideoCollectionViewCell"
     }
-    
-    struct Dimensions {
-        static let TableViewEstimatedRowHeight = 100.0
-        static let HeaderViewHeight = 30.0
+        
+    struct Placeholders {
+        static let VideoThumbnailPlaceholder = "popcorn.png"
     }
 }

@@ -23,6 +23,7 @@
 		BF2CCFB524F5A566002F100B /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2CCFB324F5A566002F100B /* CategoryTableViewCell.xib */; };
 		BF2CCFB824F5A57F002F100B /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CCFB624F5A57F002F100B /* VideoCollectionViewCell.swift */; };
 		BF2CCFB924F5A57F002F100B /* VideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2CCFB724F5A57F002F100B /* VideoCollectionViewCell.xib */; };
+		BF2CCFC124F5BAAA002F100B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CCFC024F5BAAA002F100B /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		BF2CCFB324F5A566002F100B /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
 		BF2CCFB624F5A57F002F100B /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
 		BF2CCFB724F5A57F002F100B /* VideoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCollectionViewCell.xib; sourceTree = "<group>"; };
+		BF2CCFC024F5BAAA002F100B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				BF2CCFAF24F5A241002F100B /* Constants.swift */,
+				BF2CCFC024F5BAAA002F100B /* Extensions.swift */,
 			);
 			path = Utilitise;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF2CCF7424F59B62002F100B /* ExploreViewController.swift in Sources */,
+				BF2CCFC124F5BAAA002F100B /* Extensions.swift in Sources */,
 				BF2CCF7024F59B62002F100B /* AppDelegate.swift in Sources */,
 				BF2CCFAD24F59F8C002F100B /* CategoryViewModel.swift in Sources */,
 				BF2CCF7224F59B62002F100B /* SceneDelegate.swift in Sources */,
