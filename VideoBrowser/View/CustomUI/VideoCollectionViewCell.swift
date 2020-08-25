@@ -10,6 +10,12 @@ import UIKit
 
 class VideoCollectionViewCell: UICollectionViewCell {
 
+    static func getNib() -> UINib {
+        return UINib(nibName: Constants.CellIdentifiers.VideoCollectionViewCellIdentifier, bundle: .main)
+    }
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

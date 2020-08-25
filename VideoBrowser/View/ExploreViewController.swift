@@ -28,7 +28,7 @@ class ExploreViewController: UIViewController {
     fileprivate func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(CategoryTableViewCell.self, forCellReuseIdentifier: Constants.CellIdentifiers.CategoryTableViewCellIdentifier)
+        tableView.register(CategoryTableViewCell.getNib(), forCellReuseIdentifier: Constants.CellIdentifiers.CategoryTableViewCellIdentifier)
         tableView.estimatedRowHeight = 100.0
         tableView.rowHeight = UITableView.automaticDimension
         tableView.tableFooterView = UIView()
@@ -54,6 +54,10 @@ extension ExploreViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 30
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 180
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
