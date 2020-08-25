@@ -15,6 +15,7 @@
 		BF2CCF7C24F59B66002F100B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2CCF7A24F59B66002F100B /* LaunchScreen.storyboard */; };
 		BF2CCF8724F59B67002F100B /* VideoBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CCF8624F59B67002F100B /* VideoBrowserTests.swift */; };
 		BF2CCF9224F59B67002F100B /* VideoBrowserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CCF9124F59B67002F100B /* VideoBrowserUITests.swift */; };
+		BF2CCFA724F59DFD002F100B /* assignment.json in Resources */ = {isa = PBXBuildFile; fileRef = BF2CCFA624F59DFD002F100B /* assignment.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,13 +43,14 @@
 		BF2CCF7624F59B62002F100B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF2CCF7824F59B66002F100B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF2CCF7B24F59B66002F100B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BF2CCF7D24F59B66002F100B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF2CCF8224F59B67002F100B /* VideoBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2CCF8624F59B67002F100B /* VideoBrowserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoBrowserTests.swift; sourceTree = "<group>"; };
 		BF2CCF8824F59B67002F100B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF2CCF8D24F59B67002F100B /* VideoBrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2CCF9124F59B67002F100B /* VideoBrowserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoBrowserUITests.swift; sourceTree = "<group>"; };
 		BF2CCF9324F59B67002F100B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF2CCFA324F59D1A002F100B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF2CCFA624F59DFD002F100B /* assignment.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = assignment.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,9 @@
 		BF2CCF6E24F59B62002F100B /* VideoBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				BF2CCF6F24F59B62002F100B /* AppDelegate.swift */,
-				BF2CCF7124F59B62002F100B /* SceneDelegate.swift */,
-				BF2CCF7324F59B62002F100B /* ViewController.swift */,
-				BF2CCF7524F59B62002F100B /* Main.storyboard */,
-				BF2CCF7824F59B66002F100B /* Assets.xcassets */,
-				BF2CCF7A24F59B66002F100B /* LaunchScreen.storyboard */,
-				BF2CCF7D24F59B66002F100B /* Info.plist */,
+				BF2CCFA524F59DEE002F100B /* Resources */,
+				BF2CCFA024F59C57002F100B /* View */,
+				BF2CCF9F24F59C31002F100B /* SupportingFiles */,
 			);
 			path = VideoBrowser;
 			sourceTree = "<group>";
@@ -128,6 +126,35 @@
 			path = VideoBrowserUITests;
 			sourceTree = "<group>";
 		};
+		BF2CCF9F24F59C31002F100B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				BF2CCFA324F59D1A002F100B /* Info.plist */,
+				BF2CCF6F24F59B62002F100B /* AppDelegate.swift */,
+				BF2CCF7124F59B62002F100B /* SceneDelegate.swift */,
+				BF2CCF7524F59B62002F100B /* Main.storyboard */,
+				BF2CCF7824F59B66002F100B /* Assets.xcassets */,
+				BF2CCF7A24F59B66002F100B /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		BF2CCFA024F59C57002F100B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF2CCF7324F59B62002F100B /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF2CCFA524F59DEE002F100B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF2CCFA624F59DFD002F100B /* assignment.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +165,7 @@
 				BF2CCF6824F59B62002F100B /* Sources */,
 				BF2CCF6924F59B62002F100B /* Frameworks */,
 				BF2CCF6A24F59B62002F100B /* Resources */,
+				BF2CCFA124F59CBC002F100B /* SwiftLint Run Script */,
 			);
 			buildRules = (
 			);
@@ -232,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF2CCFA724F59DFD002F100B /* assignment.json in Resources */,
 				BF2CCF7C24F59B66002F100B /* LaunchScreen.storyboard in Resources */,
 				BF2CCF7924F59B66002F100B /* Assets.xcassets in Resources */,
 				BF2CCF7724F59B62002F100B /* Main.storyboard in Resources */,
@@ -253,6 +282,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BF2CCFA124F59CBC002F100B /* SwiftLint Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BF2CCF6824F59B62002F100B /* Sources */ = {
@@ -436,7 +486,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A3H2F8CC68;
-				INFOPLIST_FILE = VideoBrowser/Info.plist;
+				INFOPLIST_FILE = VideoBrowser/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,7 +504,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A3H2F8CC68;
-				INFOPLIST_FILE = VideoBrowser/Info.plist;
+				INFOPLIST_FILE = VideoBrowser/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
