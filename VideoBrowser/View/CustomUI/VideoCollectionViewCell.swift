@@ -18,7 +18,7 @@ class VideoCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.imageView.layer.cornerRadius = 10
     }
 
 }

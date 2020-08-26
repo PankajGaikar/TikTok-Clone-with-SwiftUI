@@ -16,8 +16,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="399" height="174"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="15c-Rg-DUK">
-                        <rect key="frame" x="20" y="10" width="359" height="154"/>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="15c-Rg-DUK">
+                        <rect key="frame" x="10" y="10" width="379" height="154"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gsR-Zl-69y">
                             <size key="itemSize" width="128" height="128"/>
@@ -29,8 +29,8 @@
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="15c-Rg-DUK" secondAttribute="bottom" constant="10" id="759-Qe-36B"/>
-                    <constraint firstAttribute="trailing" secondItem="15c-Rg-DUK" secondAttribute="trailing" constant="20" id="WgV-gz-uXj"/>
-                    <constraint firstItem="15c-Rg-DUK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="awc-ZA-RPr"/>
+                    <constraint firstAttribute="trailing" secondItem="15c-Rg-DUK" secondAttribute="trailing" constant="10" id="WgV-gz-uXj"/>
+                    <constraint firstItem="15c-Rg-DUK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="awc-ZA-RPr"/>
                     <constraint firstItem="15c-Rg-DUK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="esg-Ck-DMm"/>
                 </constraints>
             </tableViewCellContentView>

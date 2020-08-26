@@ -62,6 +62,7 @@ extension ExploreViewController: UITableViewDelegate, UITableViewDataSource {
          * Tableview will lay the video thumbnails i.e. collection item data.
          */
         cell.nodes = categoryViewModel.categories[indexPath.section].nodes
+        cell.delegate = self
         return cell
     }
     
@@ -70,16 +71,16 @@ extension ExploreViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 180
+        return 230
     }
     
     /*
      * Create programatic view for table section header.
      */
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-
         let headerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 30))
-        let titleLabel = UILabel(frame: CGRect(x: 20, y: 5, width: tableView.frame.width, height: 20))
+        headerView.backgroundColor = .systemBackground
+        let titleLabel = UILabel(frame: CGRect(x: 10, y: 5, width: tableView.frame.width, height: 20))
         headerView.addSubview(titleLabel)
         titleLabel.text = categoryViewModel.categories[section].title
         return headerView
@@ -105,4 +106,14 @@ extension ExploreViewController: CategoryViewModelDelegate {
             self.present(alertController, animated: true, completion: nil)
         }
     }
+}
+
+extension ExploreViewController: VideoCellSelectionDelegate {
+    
+    func playCategoryVideos(with nodes: [Node], selectedIndex: Int) {
+        let videosPageViewController = VideosPageViewController.initialize(with: nodes, index: selectedIndex)
+        videosPageViewController.modalPresentationStyle = .fullScreen
+        self.present(videosPageViewController, animated: true, completion: nil)
+    }
+    
 }

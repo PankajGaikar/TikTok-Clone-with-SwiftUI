@@ -24,6 +24,8 @@
 		BF2CCFB824F5A57F002F100B /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CCFB624F5A57F002F100B /* VideoCollectionViewCell.swift */; };
 		BF2CCFB924F5A57F002F100B /* VideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2CCFB724F5A57F002F100B /* VideoCollectionViewCell.xib */; };
 		BF2CCFC124F5BAAA002F100B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CCFC024F5BAAA002F100B /* Extensions.swift */; };
+		BF2E214D24F6C3A500E7E0EE /* VideosPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2E214C24F6C3A500E7E0EE /* VideosPageViewController.swift */; };
+		BF2E214F24F6C46B00E7E0EE /* StreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2E214E24F6C46B00E7E0EE /* StreamViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		BF2CCFB624F5A57F002F100B /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
 		BF2CCFB724F5A57F002F100B /* VideoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCollectionViewCell.xib; sourceTree = "<group>"; };
 		BF2CCFC024F5BAAA002F100B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BF2E214C24F6C3A500E7E0EE /* VideosPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosPageViewController.swift; sourceTree = "<group>"; };
+		BF2E214E24F6C46B00E7E0EE /* StreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,8 @@
 			children = (
 				BF2CCFB124F5A53C002F100B /* CustomUI */,
 				BF2CCF7324F59B62002F100B /* ExploreViewController.swift */,
+				BF2E214C24F6C3A500E7E0EE /* VideosPageViewController.swift */,
+				BF2E214E24F6C46B00E7E0EE /* StreamViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -369,11 +375,13 @@
 			files = (
 				BF2CCF7424F59B62002F100B /* ExploreViewController.swift in Sources */,
 				BF2CCFC124F5BAAA002F100B /* Extensions.swift in Sources */,
+				BF2E214F24F6C46B00E7E0EE /* StreamViewController.swift in Sources */,
 				BF2CCF7024F59B62002F100B /* AppDelegate.swift in Sources */,
 				BF2CCFAD24F59F8C002F100B /* CategoryViewModel.swift in Sources */,
 				BF2CCF7224F59B62002F100B /* SceneDelegate.swift in Sources */,
 				BF2CCFB424F5A566002F100B /* CategoryTableViewCell.swift in Sources */,
 				BF2CCFAB24F59EB9002F100B /* Models.swift in Sources */,
+				BF2E214D24F6C3A500E7E0EE /* VideosPageViewController.swift in Sources */,
 				BF2CCFB824F5A57F002F100B /* VideoCollectionViewCell.swift in Sources */,
 				BF2CCFB024F5A241002F100B /* Constants.swift in Sources */,
 			);

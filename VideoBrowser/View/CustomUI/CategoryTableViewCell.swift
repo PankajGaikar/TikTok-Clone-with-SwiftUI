@@ -7,7 +7,10 @@
 //
 
 import UIKit
-import AVFoundation
+
+protocol VideoCellSelectionDelegate: AnyObject {
+    func playCategoryVideos(with nodes: [Node], selectedIndex: Int)
+}
 
 class CategoryTableViewCell: UITableViewCell {
 
@@ -15,7 +18,8 @@ class CategoryTableViewCell: UITableViewCell {
     
     //Array of categorised videos.
     var nodes: [Node] = []
-    
+    weak var delegate: VideoCellSelectionDelegate?
+
     static func getNib() -> UINib {
         return UINib(nibName: Constants.CellIdentifiers.CategoryTableViewCellIdentifier, bundle: .main)
     }
@@ -48,18 +52,22 @@ extension CategoryTableViewCell: UICollectionViewDelegate, UICollectionViewDataS
         let videoCollectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.CellIdentifiers.VideoCollectionViewCellIdentifier, for: indexPath) as! VideoCollectionViewCell
         
         //Check if URI exists. If not, default URI is assigned from xib file itself.
-        if let thumbnailURI = URL(string: nodes[indexPath.row].video.encodeURI) {
+        if nodes.count > indexPath.row, let thumbnailURI = URL(string: nodes[indexPath.row].video.encodeURI) {
             videoCollectionCell.imageView.generateVideoThumbnail(from: thumbnailURI)
         }
         
         return videoCollectionCell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.delegate?.playCategoryVideos(with: nodes, selectedIndex: indexPath.row)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let collectionViewWidth = collectionView.bounds.width
         
         //Set 2.5 collection items visible at beginning. Just random number 🤨
-        return CGSize(width: collectionViewWidth/2.5, height: self.frame.height - 20)
+        return CGSize(width: collectionViewWidth/2.8, height: self.frame.height - 20)
     }
 
 }

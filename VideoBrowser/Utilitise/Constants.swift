@@ -20,7 +20,16 @@ struct Constants {
         static let VideoCollectionViewCellIdentifier = "VideoCollectionViewCell"
     }
         
+    struct StoryboardIDs {
+        static let VideosPageViewControllerIdentifier = "VideosPageViewController"
+        static let StreamViewControllerIdentifier = "StreamViewController"
+    }
+    
     struct Placeholders {
         static let VideoThumbnailPlaceholder = "popcorn.png"
+    }
+    
+    struct Strings {
+        static let StoryboardMain = "Main"
     }
 }
