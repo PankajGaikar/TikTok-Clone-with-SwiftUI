@@ -54,7 +54,15 @@ class StreamViewController: AVPlayerViewController {
         loader.hidesWhenStopped = true
         
         let backButton = UIButton(type: .custom)
-        backButton.frame = CGRect(x: 10, y: 40, width: 30, height: 30)
+        if let window = UIApplication.shared.windows.filter({$0.isKeyWindow}).first {
+            let topMargin =  window.safeAreaInsets.top
+            let leftMargin =  window.safeAreaInsets.left
+            backButton.frame = CGRect(x: leftMargin + 20, y: topMargin + 30, width: 30, height: 30)
+        }
+        else {
+            backButton.frame = CGRect(x: 20, y: 30, width: 30, height: 30)
+        }
+
         backButton.setImage(UIImage(named: "back_button.png"), for: .normal)
         backButton.imageView?.image = backButton.imageView?.image?.withRenderingMode(.alwaysTemplate)
         backButton.imageView?.tintColor = .systemGray2
