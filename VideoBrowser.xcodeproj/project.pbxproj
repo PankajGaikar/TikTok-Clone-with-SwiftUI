@@ -165,10 +165,8 @@
 		BF2CCFA024F59C57002F100B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BF2E215024F6ED1700E7E0EE /* Controllers */,
 				BF2CCFB124F5A53C002F100B /* CustomUI */,
-				BF2CCF7324F59B62002F100B /* ExploreViewController.swift */,
-				BF2E214C24F6C3A500E7E0EE /* VideosPageViewController.swift */,
-				BF2E214E24F6C46B00E7E0EE /* StreamViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -215,6 +213,16 @@
 				BF2CCFB724F5A57F002F100B /* VideoCollectionViewCell.xib */,
 			);
 			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		BF2E215024F6ED1700E7E0EE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BF2CCF7324F59B62002F100B /* ExploreViewController.swift */,
+				BF2E214C24F6C3A500E7E0EE /* VideosPageViewController.swift */,
+				BF2E214E24F6C46B00E7E0EE /* StreamViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
