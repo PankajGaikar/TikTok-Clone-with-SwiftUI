@@ -27,6 +27,11 @@ class StreamViewController: AVPlayerViewController {
         observePlaybackState()
     }
     
+    @objc private func closeView() {
+        self.dismiss(animated: true, completion: nil)
+    }
+
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         player?.play()
@@ -47,6 +52,14 @@ class StreamViewController: AVPlayerViewController {
         loader.color = .white
         loader.startAnimating()
         loader.hidesWhenStopped = true
+        
+        let backButton = UIButton(type: .custom)
+        backButton.frame = CGRect(x: 10, y: 40, width: 30, height: 30)
+        backButton.setImage(UIImage(named: "back_button.png"), for: .normal)
+        backButton.imageView?.image = backButton.imageView?.image?.withRenderingMode(.alwaysTemplate)
+        backButton.imageView?.tintColor = .systemGray2
+        backButton.addTarget(self, action: #selector(closeView), for: .touchUpInside)
+        self.contentOverlayView?.addSubview(backButton)
     }
     
     /*

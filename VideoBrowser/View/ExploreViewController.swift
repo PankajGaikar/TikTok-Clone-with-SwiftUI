@@ -83,6 +83,7 @@ extension ExploreViewController: UITableViewDelegate, UITableViewDataSource {
         let titleLabel = UILabel(frame: CGRect(x: 10, y: 5, width: tableView.frame.width, height: 20))
         headerView.addSubview(titleLabel)
         titleLabel.text = categoryViewModel.categories[section].title
+        titleLabel.font = UIFont.preferredFont(forTextStyle: .headline)
         return headerView
     }
 }

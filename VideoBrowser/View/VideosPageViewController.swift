@@ -19,6 +19,8 @@ class VideosPageViewController: UIPageViewController {
         super.viewDidLoad()
         setupPagination()
         setupInitialStream()
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Abcd", style: .done, target: self, action: #selector(closeView))
     }
     
     //MARK: Setup UIPageViewController
