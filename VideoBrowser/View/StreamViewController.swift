@@ -10,15 +10,21 @@ import UIKit
 import AVKit
 
 class StreamViewController: AVPlayerViewController {
-
+    
+    //MARK: Properties
     var index: Int = 0
     var streamURI: String = ""
     var isPlaying: Bool = false
+    
+    //MARK: UI
+    var loader = UIActivityIndicatorView(style: .large)
     
     //MARK: ViewController lifecycle.
     override func viewDidLoad() {
         super.viewDidLoad()
         initialiseVideoURL()
+        setupUI()
+        observePlaybackState()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -29,6 +35,32 @@ class StreamViewController: AVPlayerViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
         player?.pause()
+    }
+    
+    fileprivate func setupUI() {
+        self.showsPlaybackControls = false
+        self.contentOverlayView?.addSubview(loader)
+        self.contentOverlayView?.center = self.view.center
+        if let center = self.contentOverlayView?.center {
+            loader.center = center
+        }
+        loader.color = .white
+        loader.startAnimating()
+        loader.hidesWhenStopped = true
+    }
+    
+    /*
+     * This method will observe playback button.
+     * Will stop ActivityIndicator once video starts playing.
+     */
+    func observePlaybackState() {
+        self.player?.addPeriodicTimeObserver(forInterval: CMTimeMake(value: 1, timescale: 600), queue: DispatchQueue.main, using: { [weak self] time in
+            if self?.player?.currentItem?.status == AVPlayerItem.Status.readyToPlay {
+                if self?.player?.currentItem?.isPlaybackLikelyToKeepUp ?? false {
+                    self?.loader.stopAnimating()
+                }
+            }
+        })
     }
     
     //MARK: Instantiate ViewController.

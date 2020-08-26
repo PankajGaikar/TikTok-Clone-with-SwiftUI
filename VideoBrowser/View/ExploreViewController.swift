@@ -113,6 +113,7 @@ extension ExploreViewController: VideoCellSelectionDelegate {
     func playCategoryVideos(with nodes: [Node], selectedIndex: Int) {
         let videosPageViewController = VideosPageViewController.initialize(with: nodes, index: selectedIndex)
         videosPageViewController.modalPresentationStyle = .fullScreen
+        videosPageViewController.modalTransitionStyle = .coverVertical
         self.present(videosPageViewController, animated: true, completion: nil)
     }
     
